@@ -39,7 +39,7 @@ This data comes from [UCI Machine Learning repository](https://archive.ics.uci.e
 
 ### Correlation Analysis
 
-<img src="0.jpeg" width=300>
+<img src="0.jpeg" width=500>
 
 As shown above, similar acoustic features have strong positive correlations, which is close to one. For example, Mel frequency cepstral coefficients and their derivatives(MFCC and Delta) have strong correlations. However, different acoustic features are almost uncorrelated such as Mel frequency cepstral coefficients and Pitch period entropy(PPE).
 
@@ -47,7 +47,7 @@ Surprisingly, Harmonic-to-noise ratios are highly, positively correlated with Me
 
 ### Performance Comparison between Logistic, LASSO, and Ridge by 10 Fold Cross Validation
 
-<img src="1.jpeg" width=600>
+<img src="1.jpeg" width=800>
 
 Commonly, 10-folds cross validation is known as the best. Each box plot comes from 100 iterations for each algorithm. Unlike the logistic regression, lasso and ridge regression are not overfitted since the train error rates are close to the test error rate. The hyperparameter is chosen by the 10 folds cross validation.
 
