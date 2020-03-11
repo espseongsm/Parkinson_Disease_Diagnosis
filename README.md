@@ -39,7 +39,7 @@ This data comes from [UCI Machine Learning repository](https://archive.ics.uci.e
 
 ### Correlation Analysis
 
-![Correlation Matrix](0.jpeg, 20%)
+<img src="0.jpeg" width=300>
 
 As shown above, similar acoustic features have strong positive correlations, which is close to one. For example, Mel frequency cepstral coefficients and their derivatives(MFCC and Delta) have strong correlations. However, different acoustic features are almost uncorrelated such as Mel frequency cepstral coefficients and Pitch period entropy(PPE).
 
