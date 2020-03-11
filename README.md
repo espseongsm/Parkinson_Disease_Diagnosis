@@ -55,7 +55,7 @@ The cross validation error rate with 10 folds is also a good estimate of the tes
 
 #### Optimal K Fold Cross Validation for LASSO Regression
 
-![Optimal K Fold Cross Validation for LASSO](2.jpeg)
+<img src="2.jpeg" width=600>
 
 We will conduct an experiments to decide what number of folds is the best for reducing the misclassification error rate. 15 types of folds will be tested from 3 folds to Leave-One-Out cross validation.
 
@@ -63,7 +63,7 @@ The error rates and time above are the average of 100 iterations of lasso logist
 
 #### Optimal K Fold Cross Validation for Ridge Regression
 
-![Optimal K Fold Cross Validation for Ridge](3.jpeg)
+<img src="3.jpeg" width=600>
 
 **10 fold cross validation is the best for the ridge regression** as shown above. Interestingly, increasing the number of folds doesn't improve the cross validation error rate. We don't need to consider the time to run the cross validation because the LOO cross validation, which takes the longest time to run, takes only less than 10 seconds.
 
@@ -71,13 +71,13 @@ In this dataset, **the ridge regression takes much shorter time to cross validat
 
 #### Optimal Hyperparameters for LASSO and Ridge Regression
 
-![Optimal Hyperparameters](4.jpeg)
+<img src="4.jpeg" width=600>
 
 **The best hyperparameter, lambda, for the lasso regression is 0.0058, and that for the ridge regression is 0.1272.** The lowest cross validation error rate is marked as a red dot.
 
 #### Variable Importance
 
-![Variable Importance](6.jpeg)
+<img src="6.jpeg" width=600>
 
 Regarding the variable importance, there are similar patterns in the lasso and ridge regression. The order of variables doesn't change in the x axis. Some variables with negative coefficients in the lasso regression tend to have negative coefficients in the ridge regression.
 
@@ -117,7 +117,7 @@ The harmonic-to-noise ratio in 0-3500 Hz has the most negative contribution to t
 
 ### Best Method between Logistic, LASSO, and Ridge Regression
 
-![Best Method](5.jpeg)
+<img src="5.jpeg" width=600>
 
 **The best method for this dataset is the ridge logistic regression with hyperparameter = 0.1272 chosen by 10 fold cross validation.**
 
