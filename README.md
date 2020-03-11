@@ -47,7 +47,7 @@ Surprisingly, Harmonic-to-noise ratios are highly, positively correlated with Me
 
 ### Performance Comparison between Logistic, LASSO, and Ridge by 10 Fold Cross Validation
 
-![General Comparison](1.jpeg=100x20)
+<img src="1.jpeg" width=600>
 
 Commonly, 10-folds cross validation is known as the best. Each box plot comes from 100 iterations for each algorithm. Unlike the logistic regression, lasso and ridge regression are not overfitted since the train error rates are close to the test error rate. The hyperparameter is chosen by the 10 folds cross validation.
 
