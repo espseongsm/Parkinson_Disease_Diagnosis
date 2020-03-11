@@ -123,7 +123,7 @@ The harmonic-to-noise ratio in 0-3500 Hz has the most negative contribution to t
 
 ### Model Fit
 
-Instead of n_train = 0.8n = 192, When we use the full dataset of $n = 240$ for the ridge regression with hyperparameter = 0.1272, the train error rate is 0.146. The train error rate of 0.146 is underestimated the true misclassification error rate, implying that the true misclassification error rate from a new dataset of new patients definitely expected to be higher than the train error rate. However, since the ridge regression is less overfitted than other methods and the test error rate from n_test = 0.2n = 4 is just slightly higher than the train error rate from n_train = 0.8n = 192, the true misclassification error rate of the new dataset wouldn't be much worse than the train error rate from the full dataset of n = 240.
+Instead of n_train = 0.8n = 192, When we use the full dataset of n = 240 for the ridge regression with hyperparameter = 0.1272, the train error rate is 0.146. The train error rate of 0.146 is underestimated the true misclassification error rate, implying that the true misclassification error rate from a new dataset of new patients definitely expected to be higher than the train error rate. However, since the ridge regression is less overfitted than other methods and the test error rate from n_test = 0.2n = 4 is just slightly higher than the train error rate from n_train = 0.8n = 192, the true misclassification error rate of the new dataset wouldn't be much worse than the train error rate from the full dataset of n = 240.
 
 Confusion Matrix for Ridge Regression
 
