@@ -39,7 +39,7 @@ This data comes from [UCI Machine Learning repository](https://archive.ics.uci.e
 
 ### Correlation Analysis
 
-![Correlation Matrix](https://drive.google.com/uc?export=view&id=1p7UlkpFY0jG4tMUdWRXg1f52ily99Tgu)
+![Correlation Matrix](0.jpeg)
 
 As shown above, similar acoustic features have strong positive correlations, which is close to one. For example, Mel frequency cepstral coefficients and their derivatives(MFCC and Delta) have strong correlations. However, different acoustic features are almost uncorrelated such as Mel frequency cepstral coefficients and Pitch period entropy(PPE).
 
@@ -47,7 +47,7 @@ Surprisingly, Harmonic-to-noise ratios are highly, positively correlated with Me
 
 ### Performance Comparison between Logistic, LASSO, and Ridge by 10 Fold Cross Validation
 
-![General Comparison](https://drive.google.com/uc?export=view&id=15LChS9VlQkOyC5kG1nGmWAHysBnQsI67)
+![General Comparison](1.jpeg)
 
 Commonly, 10-folds cross validation is known as the best. Each box plot comes from 100 iterations for each algorithm. Unlike the logistic regression, lasso and ridge regression are not overfitted since the train error rates are close to the test error rate. The hyperparameter is chosen by the 10 folds cross validation.
 
@@ -55,7 +55,7 @@ The cross validation error rate with 10 folds is also a good estimate of the tes
 
 #### Optimal K Fold Cross Validation for LASSO Regression
 
-![Optimal K Fold Cross Validation for LASSO](https://drive.google.com/uc?export=view&id=1nPkG9GGcWC0c6GRSTcDgV_XVyTm3alUS)
+![Optimal K Fold Cross Validation for LASSO](2.jpeg)
 
 We will conduct an experiments to decide what number of folds is the best for reducing the misclassification error rate. 15 types of folds will be tested from 3 folds to Leave-One-Out cross validation.
 
@@ -63,7 +63,7 @@ The error rates and time above are the average of 100 iterations of lasso logist
 
 #### Optimal K Fold Cross Validation for Ridge Regression
 
-![Optimal K Fold Cross Validation for Ridge](https://drive.google.com/uc?export=view&id=1LPMy6sct05g8S4q_5TnDixalHd-8TdCC)
+![Optimal K Fold Cross Validation for Ridge](3.jpeg)
 
 **10 fold cross validation is the best for the ridge regression** as shown above. Interestingly, increasing the number of folds doesn't improve the cross validation error rate. We don't need to consider the time to run the cross validation because the LOO cross validation, which takes the longest time to run, takes only less than 10 seconds.
 
@@ -71,13 +71,13 @@ In this dataset, **the ridge regression takes much shorter time to cross validat
 
 #### Optimal Hyperparameters for LASSO and Ridge Regression
 
-![Optimal Hyperparameters](https://drive.google.com/uc?export=view&id=11Rjq5syRF70iNhBVI-Ka5BsK8Pyv7S5i)
+![Optimal Hyperparameters](4.jpeg)
 
 **The best hyperparameter, lambda, for the lasso regression is 0.0058, and that for the ridge regression is 0.1272.** The lowest cross validation error rate is marked as a red dot.
 
 #### Variable Importance
 
-![Variable Importance](https://drive.google.com/uc?export=view&id=1riIfjv4TtHU-Yzc0Ah_zxj9lZQYNUpwL)
+![Variable Importance](6.jpeg)
 
 Regarding the variable importance, there are similar patterns in the lasso and ridge regression. The order of variables doesn't change in the x axis. Some variables with negative coefficients in the lasso regression tend to have negative coefficients in the ridge regression.
 
@@ -117,13 +117,13 @@ The harmonic-to-noise ratio in 0-3500 Hz has the most negative contribution to t
 
 ### Best Method between Logistic, LASSO, and Ridge Regression
 
-![Best Method](https://drive.google.com/uc?export=view&id=1IO9S1Ry-BGAWfZ-PpryfW7fmI0CuQ4Ow)
+![Best Method](5.jpeg)
 
 **The best method for this dataset is the ridge logistic regression with $\lambda = 0.1272$ chosen by 10 fold cross validation.**
 
 ### Model Fit
 
-Instead of n_train = 0.8n = 192, When we use the full dataset of $n = 240$ for the ridge regression with $\lambda = 0.1272$, the train error rate is 0.146. The train error rate of 0.146 is underestimated the true misclassification error rate, implying that the true misclassification error rate from a new dataset of new patients definitely expected to be higher than the train error rate. However, since the ridge regression is less overfitted than other methods and the test error rate from n_test = 0.2n = 48 is just slightly higher than the train error rate from n_train = 0.8n = 192, the true misclassification error rate of the new dataset wouldn't be much worse than the train error rate from the full dataset of n = 240.
+Instead of n_train = 0.8n = 192, When we use the full dataset of $n = 240$ for the ridge regression with $\lambda = 0.1272$, the train error rate is 0.146. The train error rate of 0.146 is underestimated the true misclassification error rate, implying that the true misclassification error rate from a new dataset of new patients definitely expected to be higher than the train error rate. However, since the ridge regression is less overfitted than other methods and the test error rate from n_test = 0.2n = 4 is just slightly higher than the train error rate from n_train = 0.8n = 192, the true misclassification error rate of the new dataset wouldn't be much worse than the train error rate from the full dataset of n = 240.
 
 Confusion Matrix for Ridge Regression
 
