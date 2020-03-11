@@ -136,7 +136,7 @@ As the dataset is balanced, the confusion matrix of the ridge regression is also
 
 ## Conclusion
 
-The ridge logistic regression with hyperparameter = 0.1272 is the best method for this dataset since the ridge regression is not overfitted too much and has the best estimate of the true misclassification error rate. Given the chosen optimal hyperpameter from the optimal fold cross paramete, the misclassification error rate by about 2 percentage.
+The ridge logistic regression with hyperparameter = 0.1272 is the best method for this dataset since the ridge regression is not overfitted too much and has the best estimate of the true misclassification error rate. **Given the chosen optimal hyperpameter from the optimal fold cross paramete, the misclassification error rate by about 2 percentage.**
 
 The train error rate of 0.146 from the full dataset can be a good estimate for the true misclassification error rate when we face a new dataset. For example, when we diagnose 100 new patients with this ridge logistic regression model, the misclassification error rate would be around 15 percentage. In addition to the prediction accuracy, this model doesn't spend too much time to cross validate and train the model because we already consider the trade-off between time and error rate. In particular, this dataset requires less than 5 second to cross validate with 10 folds.
 
