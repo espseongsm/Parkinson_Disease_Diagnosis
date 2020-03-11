@@ -6,9 +6,7 @@ Dec 27th, 2019
 
 [Analysis Report](https://drive.google.com/open?id=1yRHq5az0IVvgjua4vYC9QhZMcF_5ndWl)
 
-[R Code](https://drive.google.com/open?id=1KH9FjngsPXtv8BFuG1kuIMuzNKqZp8Rb)
-
-[R Code PDF](https://drive.google.com/open?id=1hnQoRyjMFT54xps70zTOM7orCEPhdB0L)
+[R Code](https://drive.google.com/open?id=1hnQoRyjMFT54xps70zTOM7orCEPhdB0L)
 
 ## Brief Summary
 
