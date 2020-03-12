@@ -12,7 +12,7 @@ Dec 27th, 2019
 
 This is a brief summary of the project. If you want to know more, please refer to the linked analysis report and R code as above.
 
-The purpose of this project is to figure out how tuning hyperpameter improves the predictive performance and what value of fold is suitable for cross validation.
+The purpose of this project is to figure out how tuning a hyperpameter improves the predictive performance of the best-fit machine learning algorithm and what value of folds is suitable for cross validation.
 
 **The ridge logistic regression is the best method for this dataset.** Let me explain as below.
 
